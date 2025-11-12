@@ -15,15 +15,6 @@ const Layout = ({children}:ILayout) => {
 
 const location=useLocation()
 
-const dummyNotification={
-        name: "John Doe",
-        url: "https://example.com/profile",
-        description: "You have a new follower!",
-        img: img,
-          client: "Twitter",
-  date: "Nov 12, 2025",
-  time: "10:45 AM - 11:45 AM ",
-      }
 
 
 useEffect(()=>{
@@ -59,3 +50,14 @@ notify(dummyNotification,"success")
 }
 
 export default Layout
+
+
+export const dummyNotification={
+        name: "John Doe",
+        url: "https://example.com/profile",
+        description: "You have a new follower!",
+        img: img,
+          client: "Twitter",
+  date: "Nov 12, 2025",
+  time: "10:45 AM - 11:45 AM ",
+      }
