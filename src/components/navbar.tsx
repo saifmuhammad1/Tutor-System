@@ -4,10 +4,10 @@ import { useState } from 'react'
 import logo from "../asset/image/logo.png"
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { navMainRoutes } from '../routes/pagesRoutes'
-import { useNotification } from '../hooks/notification'
+
 
 const Navbar = () => {
-  const { notify, Notification } = useNotification()
+ 
 const location=useLocation()
      const [open, setOpen] = useState(false)
 

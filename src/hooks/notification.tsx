@@ -38,12 +38,15 @@ const [message, setMessage] = useState<IuserNotification>()
       leave="transition duration-200"
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
+      
     >
-      <div
-        className={`fixed top-4 right-4 px-4 py-2 rounded-lg shadow-md text-white 
-`}
-      >
-         <div className=' grid grid-cols-12 px-5  bg-black md:bg-lightBlue m-2 py-2'>
+<div
+  className={`
+    fixed top-4 right-4
+    md:static md:top-auto md:right-auto
+    rounded-lg shadow-md text-white border
+  `}>
+         <div className=' grid grid-cols-12 px-5  bg-white md:bg-lightBlue m-2 py-2'>
     
 
         <div className='  gap-2  grid-cols-7 col-span-11  w-full '>
@@ -70,7 +73,7 @@ const [message, setMessage] = useState<IuserNotification>()
   </div>
 
 
-  <div className="md:col-span-4 flex flex-wrap justify-evenly gap-2">
+  <div className="md:col-span-4 flex flex-wrap justify-evenly md:gap-2 gap-1">
     <Button className="flex flex-col items-center gap-1 text-sm text-primaryBlue">
       <Check className="size-6" />
       <p>Accept</p>
@@ -81,7 +84,7 @@ const [message, setMessage] = useState<IuserNotification>()
       Decline
     </Button>
 
-    <Button className="flex flex-col items-center gap-1 text-sm text-gray-900">
+    <Button className="flex flex-col items-center gap-1 text-sm text-gray-900 break-words whitespace-normal">
       <Clock className="size-6" />
       Propose new time
     </Button>
@@ -96,8 +99,8 @@ const [message, setMessage] = useState<IuserNotification>()
 </div>
 
         </div>
-        <div className=' flex justify-end p-0 m-0'>
- <X/>
+        <div className=' flex justify-end p-0 m-0 text-black'>
+ <X onClick={ ()=> setShow(false )}/>
         </div>
     </div>
       </div>

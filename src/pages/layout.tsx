@@ -4,13 +4,13 @@ import { useNotification } from '../hooks/notification';
 import { useLocation } from 'react-router-dom';
 
 import img from "../asset/image/profile1.jpg"
-import NotificationPanel from '../components/notificationPanel';
 interface ILayout {
   children: ReactNode; 
 }
 
 
 const Layout = ({children}:ILayout) => {
+
     const { notify, Notification } = useNotification()
 
 const location=useLocation()
@@ -39,13 +39,16 @@ notify(dummyNotification,"success")
 
 
   return (
-    <><>
+    <>
       <Navbar />
-      <NotificationPanel message={dummyNotification}/>
+
+      <Notification />
       <div>
         {children}
       </div>
-    </><Notification /></>
+    </>
+    
+ 
   )
 }
 

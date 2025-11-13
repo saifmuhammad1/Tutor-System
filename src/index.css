@@ -3,6 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer utilities {
   .bg-background {
     background-color: rgba(248, 244, 245)

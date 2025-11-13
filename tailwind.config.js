@@ -9,7 +9,8 @@ module.exports = {
       },
       colors:{
         primaryBlue:'#009ba7',
-        lightBlue:'#eafafb'
+        lightBlue:'#eafafb',
+        skyBlue:'#5ce1ea'
       }
   },
 },
