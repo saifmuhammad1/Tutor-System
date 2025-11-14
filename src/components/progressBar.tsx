@@ -4,17 +4,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 interface StepProgressProps {
-  steps: { label: string,desc:string,date:string }[];
+  steps: { label: string; desc: string; date: string }[];
   currentStep: number;
 }
 
 export function StepProgress({ steps, currentStep }: StepProgressProps) {
   return (
     <div className=" hidden relative md:flex flex-col items-start gap-6 bg-white p-2 rounded-sm border-t-2 border-skyBlue">
-
-      <div className="text-primaryBlue text-2xl ">
-      Notice Board
-      </div>
+      <div className="text-primaryBlue text-2xl ">Notice Board</div>
       <div className="absolute left-3 top-0 bottom-0 w-1 " />
 
       {steps.map((step, index) => {
@@ -30,8 +27,6 @@ export function StepProgress({ steps, currentStep }: StepProgressProps) {
                   : "bg-white border-primaryBlue text-gray-400"
               }`}
             />
-           
-           
 
             {index < steps.length - 1 && (
               <div
@@ -39,29 +34,23 @@ export function StepProgress({ steps, currentStep }: StepProgressProps) {
               ></div>
             )}
 
-           
             <span
               className={`ml-4 text-sm font-medium flex flex-row justify-between w-[30vh] `}
             >
               <div className="flex-col ">
-                <p className="text-black">
- {step.label}
-                </p>
-                <p className="text-gray-400 text-xs">
-                  {step.desc}
-                </p>
+                <p className="text-black">{step.label}</p>
+                <p className="text-gray-400 text-xs">{step.desc}</p>
               </div>
-             <div className="text-gray-400 text-xs ">
-              {step.date}
-             </div>
+              <div className="text-gray-400 text-xs ">{step.date}</div>
             </span>
-
-
           </div>
         );
       })}
 
-      <Link to="/" className="text-primaryBlue text-xs"> Go To Notification</Link>
+      <Link to="/" className="text-primaryBlue text-xs underline">
+        {" "}
+        Go To Notification
+      </Link>
     </div>
   );
 }

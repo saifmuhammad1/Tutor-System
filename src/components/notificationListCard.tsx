@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const NotificationListCard = () => {
-  return (
-    <div>NotificationListCard</div>
-  )
-}
+  return <div>NotificationListCard</div>;
+};
 
-export default NotificationListCard
+export default NotificationListCard;
