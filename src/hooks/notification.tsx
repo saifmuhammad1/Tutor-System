@@ -70,22 +70,34 @@ export function useNotification() {
                 </div>
 
                 <div className="md:col-span-4 flex flex-wrap justify-evenly md:gap-2 gap-1">
-                  <Button className="flex flex-col items-center gap-1 text-sm text-primaryBlue hover:opacity-50">
+                  <Button
+                    className="flex flex-col items-center gap-1 text-sm text-primaryBlue hover:opacity-50 "
+                    onClick={() => setShow(false)}
+                  >
                     <Check className="size-6" />
                     <p>Accept</p>
                   </Button>
 
-                  <Button className="flex flex-col items-center gap-1 text-sm text-red-600 hover:opacity-50">
+                  <Button
+                    className="flex flex-col items-center gap-1 text-sm text-red-600 hover:opacity-50"
+                    onClick={() => setShow(false)}
+                  >
                     <X className="size-6" />
                     Decline
                   </Button>
 
-                  <Button className="flex flex-col items-center gap-1 text-sm text-gray-900 break-words whitespace-normal hover:opacity-50">
+                  <Button
+                    className="flex flex-col items-center gap-1 text-sm text-gray-900 break-words whitespace-normal hover:opacity-50"
+                    onClick={() => setShow(false)}
+                  >
                     <Clock className="size-6" />
                     Propose new time
                   </Button>
 
-                  <Button className="hidden md:flex flex-col items-center gap-1 text-sm text-primaryBlue hover:opacity-50">
+                  <Button
+                    className="hidden md:flex flex-col items-center gap-1 text-sm text-primaryBlue hover:opacity-50"
+                    onClick={() => setShow(false)}
+                  >
                     <Pin className="size-6" />
                     Mark as tentative
                   </Button>
