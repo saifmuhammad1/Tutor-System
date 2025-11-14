@@ -67,14 +67,14 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:grid grid-cols-5">
-          <div className="col-span-1 flex items-center justify-center font-bold px-5 py-2">
+        <div className="md:grid  md:grid-cols-5">
+          <div className="col-span-1 flex items-center justify-start md:justify-center font-bold px-5 py-2">
             <p>
               {navMainRoutes.find((obj) => obj.url === location.pathname)?.Desc}
             </p>
           </div>
 
-          <div className="col-span-4  flex flex-row items-center gap-12 ">
+          <div className="col-span-4  hidden md:flex flex-row items-center gap-12 ">
             {navMainRoutes.map((obj) => (
               <NavLink
                 key={obj.url}
