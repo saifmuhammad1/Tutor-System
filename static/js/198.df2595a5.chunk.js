@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_portfolio=self.webpackChunkmy_portfolio||[]).push([[198],{198:(e,o,r)=>{r.r(o),r.d(o,{default:()=>t});r(43);var s=r(579);const t=()=>(0,s.jsx)("div",{children:"Whiteboard"})}}]);
+//# sourceMappingURL=198.df2595a5.chunk.js.map

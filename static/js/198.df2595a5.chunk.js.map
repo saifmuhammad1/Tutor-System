@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/198.df2595a5.chunk.js","mappings":"2JAEA,MAMA,EANmBA,KAEfC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,c","sources":["pages/whiteboard.tsx"],"sourcesContent":["import React from 'react'\n\nconst Whiteboard = () => {\n  return (\n    <div>Whiteboard</div>\n  )\n}\n\nexport default Whiteboard"],"names":["Whiteboard","_jsx","children"],"sourceRoot":""}

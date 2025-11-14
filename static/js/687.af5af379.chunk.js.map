@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/687.af5af379.chunk.js","mappings":"2JAEA,MAMA,EANiBA,KAEbC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,Y","sources":["pages/accounts.tsx"],"sourcesContent":["import React from 'react'\n\nconst Accounts = () => {\n  return (\n    <div>Accounts</div>\n  )\n}\n\nexport default Accounts"],"names":["Accounts","_jsx","children"],"sourceRoot":""}
