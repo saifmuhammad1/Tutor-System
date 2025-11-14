@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Tutor-System/static/css/main.a53497ce.css",
-    "main.js": "/Tutor-System/static/js/main.7b145ba7.js",
-    "static/js/189.00f93338.chunk.js": "/Tutor-System/static/js/189.00f93338.chunk.js",
+    "main.css": "/Tutor-System/static/css/main.cd3b31ee.css",
+    "main.js": "/Tutor-System/static/js/main.406f0db3.js",
+    "static/js/102.e606f401.chunk.js": "/Tutor-System/static/js/102.e606f401.chunk.js",
     "static/js/172.83c007fe.chunk.js": "/Tutor-System/static/js/172.83c007fe.chunk.js",
     "static/js/453.8e52b34c.chunk.js": "/Tutor-System/static/js/453.8e52b34c.chunk.js",
     "static/js/823.b60c7cf7.chunk.js": "/Tutor-System/static/js/823.b60c7cf7.chunk.js",
@@ -12,9 +12,9 @@
     "static/media/profile1.jpg": "/Tutor-System/static/media/profile1.95ce450f0c0a5e439f65.jpg",
     "static/media/logo.png": "/Tutor-System/static/media/logo.ae97794fc904907393f1.png",
     "index.html": "/Tutor-System/index.html",
-    "main.a53497ce.css.map": "/Tutor-System/static/css/main.a53497ce.css.map",
-    "main.7b145ba7.js.map": "/Tutor-System/static/js/main.7b145ba7.js.map",
-    "189.00f93338.chunk.js.map": "/Tutor-System/static/js/189.00f93338.chunk.js.map",
+    "main.cd3b31ee.css.map": "/Tutor-System/static/css/main.cd3b31ee.css.map",
+    "main.406f0db3.js.map": "/Tutor-System/static/js/main.406f0db3.js.map",
+    "102.e606f401.chunk.js.map": "/Tutor-System/static/js/102.e606f401.chunk.js.map",
     "172.83c007fe.chunk.js.map": "/Tutor-System/static/js/172.83c007fe.chunk.js.map",
     "453.8e52b34c.chunk.js.map": "/Tutor-System/static/js/453.8e52b34c.chunk.js.map",
     "823.b60c7cf7.chunk.js.map": "/Tutor-System/static/js/823.b60c7cf7.chunk.js.map",
@@ -23,7 +23,7 @@
     "834.58c9a64d.chunk.js.map": "/Tutor-System/static/js/834.58c9a64d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a53497ce.css",
-    "static/js/main.7b145ba7.js"
+    "static/css/main.cd3b31ee.css",
+    "static/js/main.406f0db3.js"
   ]
 }
