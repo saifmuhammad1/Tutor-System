@@ -5,14 +5,16 @@ import { CircleCheck, MapPin } from 'lucide-react'
 
 const CompletedEventsCard = ({result}:UpcommingSessionProps) => {
   return (
-    <div className='bg-white  h-96  md:h-[85vh] p-4 flex flex-col gap-7 rounded-sm '>
+    <div className='bg-white  h-96  md:h-[85vh] p-4 flex flex-col gap-7 rounded-lg border md:border-none border-skyBlue'>
     <p className='text-primaryBlue text-xl font-semibold'>Completed Tutorial</p>
     <div className='flex flex-col gap-7 max-h-fit overflow-y-auto overflow-x-hidden scroll-m-1'>
 {
   result.map((obj:ISession,indexObj:number)=>
-    <div className='flex justify-between  text-xs md:text-sm md:px-2  text-gray-500 gap-2'>
+    <div className='grid grid-cols-12 text-xs md:text-sm md:px-2  text-gray-500  transition duration-1000 hover:border-r-2 '>
+ <div className='col-span-1 '>
  <CircleCheck className='text-primaryBlue'/>
-      <div className='flex flex-col justify-start w-[30vh] md:w-[45vh] ' >
+</div>
+      <div className='flex flex-col justify-start col-span-8  ' >
         <div className='flex flex-row gap-1 '>
         {obj.tutor.map((user,index)=>
        <p key={index} className='font-semibold '>
@@ -31,13 +33,13 @@ const CompletedEventsCard = ({result}:UpcommingSessionProps) => {
           </div>
         </div>
       </div>
-     <div className="relative flex items-center ">
+     <div className="relative flex items-center  justify-center col-span-3  ">
   {obj.image.map((imageObj, index) => (
     <img
       key={index}
       src={imageObj.img}
       alt={`avatar-${index}`}
-      className={`md:w-12 md:h-12  w-8 h-8 rounded-full border-2 border-white object-cover
+      className={`md:w-12 md:h-12  w-10 h-10 rounded-full border-2 border-white object-cover
         ${index !== 0 ? '-ml-4' : ''}`}
     />
   ))}

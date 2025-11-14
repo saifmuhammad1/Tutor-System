@@ -21,11 +21,11 @@ const colour={
 
 const ProgressCards = ({value}:ProgressCardsProps) => {
   return (
-  <div className='flex flex-col md:flex-row justify-evenly gap-2 '>
+  <div className='flex flex-col md:flex-row justify-evenly gap-2  '>
 {value.map((obj:IDummyProgressCards)=>
  <div
           key={obj.id}
-          className=" md:w-72 rounded-md p-4 text-white flex flex-col items-start justify-between shadow-md"
+          className=" md:w-72 rounded-md p-4 text-white flex flex-col items-start justify-between shadow-md transition-all duration-700 hover:scale-105"
           style={{ backgroundColor: colour[obj.type] }}
         >
 

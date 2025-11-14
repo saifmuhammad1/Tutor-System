@@ -21,7 +21,7 @@ const [showCalendar, setShowCalendar] = useState(false)
     }
   }, [location.pathname]);
   return (
-    <div className='w-screen  grid grid-cols-1 md:grid-cols-4 px-5 py-1 gap-5 md:gap-0' >
+    <div className='w-screen  grid grid-cols-1 md:grid-cols-4 p-5 gap-5 md:gap-0' >
 
       <div className=' flex flex-col gap-2 md:col-span-3'>
 
