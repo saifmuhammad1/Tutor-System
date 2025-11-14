@@ -10,7 +10,7 @@ interface StepProgressProps {
 
 export function StepProgress({ steps, currentStep }: StepProgressProps) {
   return (
-    <div className=" hidden relative md:flex flex-col items-start gap-6 bg-white p-2 rounded-sm border-t-2 border-skyBlue">
+    <div className=" hidden relative md:flex flex-col items-start gap-6 bg-white p-2 rounded-sm border-t-2 border-skyBlue overflow-x-hidden ">
       <div className="text-primaryBlue text-2xl ">Notice Board</div>
       <div className="absolute left-3 top-0 bottom-0 w-1 " />
 
@@ -18,9 +18,9 @@ export function StepProgress({ steps, currentStep }: StepProgressProps) {
         const isCompleted = index <= currentStep;
 
         return (
-          <div key={index} className="relative flex items-center z-10">
+          <div key={index} className="relative flex items-center z-10 ">
             <div
-              className={`w-6 h-6 flex items-center justify-center rounded-full border-2 font-semibold 
+              className={`w-5 h-5 flex items-center justify-center rounded-full border-2 font-semibold 
               ${
                 isCompleted
                   ? "bg-primaryBlue border-primaryBlue"
@@ -30,7 +30,7 @@ export function StepProgress({ steps, currentStep }: StepProgressProps) {
 
             {index < steps.length - 1 && (
               <div
-                className={`absolute left-[11px] top-10 h-full w-1 rounded-full  bg-primaryBlue `}
+                className={`absolute left-[8px] top-9 h-[calc(100%+16px)]  w-1 rounded-full  bg-primaryBlue `}
               ></div>
             )}
 
